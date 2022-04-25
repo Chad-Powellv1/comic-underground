@@ -1,0 +1,172 @@
+/*-------------------------*/
+/*--- CUSTOM PROPERTIES ---*/
+/*-------------------------*/
+@font-face {
+    font-family: "patrick";
+    src: url('./assets/PatrickHandSC-Regular.ttf') format("truetype");
+}
+:root {
+    --clr-light: #DED9C3;
+    --clr-blue: #50A1Be;
+    --clr-gray: #8d958a;
+    --clr-red: #bf463b;
+    --clr-yellow: #e1c148;
+
+    --fs-900: 9.375rem;
+    --fs-800: 6.2543m;
+    --fs-700: 3.5rem;
+    --fs-600: 2rem;
+    --fs-500: 1.75rem;
+    --fs-400: 1.125rem;
+    --fs-300: 1rem;
+    --fs-200: 0.875rem;
+    --fs-100: 0.5rem;
+
+    --ff-arial: "Arial", sans-serif;
+    --ff-patrick: "Patrick Hand SC", sans-serif; 
+}
+
+/*--------------------*/
+/*---    RESET     ---*/
+/*--------------------*/
+
+/* Box sizing */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+/* Reset margins */
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+p,
+figure,
+picture {
+    margin: 0;
+}
+
+body {
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+img,
+picture {
+    max-width: 100%;
+    display: block;
+}
+
+input,
+button,
+textarea,
+select {
+    font: inherit;
+}
+
+/* remove animations for those who have them turned off */
+@media (prefers-reduce-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01 !important;
+        scroll-behavior: auto !important;
+    }
+}
+
+/*----------------------*/
+/*---    Utility     ---*/
+/* ---------------------*/
+
+.flex {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.grid {
+    display: flex;
+    gap: var(--gap, 1rem);
+}
+
+.container {
+    padding-inline: 2em;
+    margin-inline: auto;
+    max-width: 80rem;
+}
+
+/*----------------------*/
+/*---    HEADER      ---*/
+/* ---------------------*/
+
+.header {
+    height: 75px;
+    display: flex;
+    align-items: center;
+    background-color: var(--clr-light);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.header-logo {
+    width: 175px;
+    object-fit: contain;
+    margin: 0 1.25rem;
+    margin-top: 1.25rem;
+}
+
+.header-search {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    border-radius: 1.5rem;
+}
+
+.header-searchInput {
+    height: 1.75rem;
+    padding: 0.625rem;
+    border: none;
+    width: 100%;
+}
+
+.header-searchIcon {
+    padding: 0.313;
+    height: 1.75rem !important;
+    width: 1.5rem;
+    background-color: var(--clr-yellow);
+}
+
+.header-actionOne {
+    font-size: var(--fs-200);
+}
+
+.header-actionTwo {
+    font-size: var(--fs-400);
+    font-weight: bold;
+}
+
+.header-nav {
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.header-action {
+    display: flex;
+    flex-direction: column;
+    margin-left: 0.625rem;
+    margin-right: 0.625rem;
+    color: black;
+    font-family: var(--ff-arial);
+}
+
+.header-link {
+    margin-top: 0.275rem;
+    margin-right: 0.375rem;
+}
+
+
