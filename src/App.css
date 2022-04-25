@@ -117,7 +117,7 @@ select {
     width: 175px;
     object-fit: contain;
     margin: 0 1.25rem;
-    margin-top: 1.25rem;
+    margin-top: 0.05rem;
 }
 
 .header-search {
@@ -125,6 +125,7 @@ select {
     flex: 1;
     align-items: center;
     border-radius: 1.5rem;
+    margin-right: 1.125rem;
 }
 
 .header-searchInput {
@@ -141,32 +142,48 @@ select {
     background-color: var(--clr-yellow);
 }
 
-.header-actionOne {
-    font-size: var(--fs-200);
-}
-
-.header-actionTwo {
-    font-size: var(--fs-400);
-    font-weight: bold;
-}
 
 .header-nav {
-    display: flex;
-    justify-content: space-evenly;
+    background-color: var(--clr-light);
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding: 0.25rem 0;
+    width: 100%;
 }
 
-.header-action {
+
+.header-link {
     display: flex;
-    flex-direction: column;
-    margin-left: 0.625rem;
-    margin-right: 0.625rem;
-    color: black;
+    justify-content: right;
+    margin-top: 0.275rem;
+    margin-right: 1.125rem;
+    font-size: var(--fs-400);
     font-family: var(--ff-arial);
 }
 
-.header-link {
-    margin-top: 0.275rem;
-    margin-right: 0.375rem;
+.header-left {
+    align-items: center;
+    display: grid;
+    grid-gap: 1rem;
+    grid-template-columns: max-content max-content;
+    padding-left: 4rem;
 }
 
+.header-right {
+    align-items: center;
+    display: grid;
+    font-size: 0.875rem;
+    grid-gap: 0.25rem;
+    grid-template-columns: max-content max-content max-content;
+    justify-content: right;
+    padding-right: 2rem;
+}
+
+.header-wrapper {
+    width: 2rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 
