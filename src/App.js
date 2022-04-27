@@ -1,11 +1,15 @@
-import { Header } from './component/Header';
+import { GlobalProvider } from './context/GlobalState';
+import { Navbar } from './component/Navbar';
+import { Outlet } from "react-router-dom";
 import './App.css';
 
 export const App = () => {
   return (
-    <div className="app">
-      <Header/>
+      <GlobalProvider>
+        <Navbar />
       {/* Home */}
-    </div>
+      <Outlet/>
+      </GlobalProvider>
+  
   );
 }
