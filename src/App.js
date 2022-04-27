@@ -7,7 +7,6 @@ export const App = () => {
   return (
       <GlobalProvider>
         <Navbar />
-      {/* Home */}
       <Outlet/>
       </GlobalProvider>
   

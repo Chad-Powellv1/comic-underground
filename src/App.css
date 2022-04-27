@@ -200,3 +200,99 @@ select {
     justify-content: center;
   }
 
+.login {
+    background-color: #fff;
+    display: block; 
+    height: 100%; 
+    left: 0;
+    position: fixed; 
+    top: 0;
+    width: 100%; 
+    z-index: 2; 
+}
+
+.login-content {
+    background-color: #fefefe;
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    margin: 15% auto;
+    margin-top: 12%;
+    width: 27rem;
+}
+
+.login-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.login-form {
+    background-color: var(--clr-gray);
+    box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+    padding: 1.25rem;
+    width: 24.75rem;
+}
+
+.login-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 1.25rem 0 0.5rem 1.25rem;
+    background-color: var(--clr-light);
+}
+
+.login-close {
+    align-items: center;
+    display: grid;
+    justify-items: right;
+    padding: 1.25rem 1.25rem 0.5rem 0;
+    background-color: var(--clr-light);
+}
+
+.login-close img:hove{
+    cursor: pointer;
+}
+
+.login-form input {
+    border: 1px solid #e5e7eb;
+    font-size: 1rem;
+    margin-bottom: 0.75rem;
+    padding: 0.875rem 1rem;
+    width: 100%;
+}
+
+.login-subtitle {
+    background: #e5e7eb;
+    height: 1px;
+    margin-bottom: 0.5rem;
+    width: 100%;
+}
+
+.login-form {
+    width: 100%;
+    padding: 1.25rem;
+}
+
+.login-form input {
+    background-color: #f3f4f6;
+    border: 1px solid #e5e7eb;
+    display: block;
+    font-size: 0.9375rem;
+    margin-bottom: 0.75rem;
+    padding: 0.875rem 1rem;
+    width: 100%;
+}
+
+.login-btn {
+    background-color: var(--clr-blue);
+    border: 0;
+    color: #fff;
+    display: block;
+    font-size: 1rem;
+    font-weight: 600;
+    margin: 1.25rem auto;
+    outline: none;
+    padding: 0.875rem 1rem;
+}
+
+.login-btn {
+    cursor: pointer;
+    opacity: 0.8;
+}

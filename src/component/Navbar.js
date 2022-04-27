@@ -2,12 +2,13 @@ import { useGlobalState } from "../context/GlobalState";
 import { BsSearch } from "react-icons/bs";
 import { Link } from "react-router-dom";
 import comic from '../assets/comic.png';
+
 import React from 'react';
 import '../App.css'
 
 export const Navbar = ({ username }) => {
     const [state, dispatch] = useGlobalState();
-
+    
     return (
         <nav>
         <div className='header-nav'>
@@ -15,12 +16,10 @@ export const Navbar = ({ username }) => {
                     {state.currentUser && (
                         <div className='header-right'>
                             <div className='header-wrapper'>
-                                <span>Hello, {state.currentUser.first_name}</span>
+                                <span>Hello, {dispatch.currentUser.first_name}</span>
                             </div>
                         </div>
                     )}
-            
-                    
 
                 </div>
                 <div className='header-link'>
