@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 
-export const Home = () => {
+export const Home = ({ }) => {
   return (
     <div>
 
