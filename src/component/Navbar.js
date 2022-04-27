@@ -12,22 +12,22 @@ export const Navbar = ({ username }) => {
         <nav>
         <div className='header-nav'>
                 <div className='header-left'>
-                    {state.username && (
+                    {state.currentUser && (
                         <div className='header-right'>
                             <div className='header-wrapper'>
-                                <span>Hello, {username.name}</span>
+                                <span>Hello, {state.currentUser.first_name}</span>
                             </div>
                         </div>
                     )}
             
-                    <Link to='/login'><span className="header-sell">Login</span></Link>
-                    <Link to='/register'><span className="header-sell">Register</span></Link>
-                    <Link to='/sell'><span className="header-sell">Sell</span></Link>
-                    <Link to='/watchlist'><span className="header-sell">watchlist</span></Link>
+                    <Link to='/login' style={{textDecoration: 'none'}}><span className="header-sell">Login</span></Link>
+                    <Link to='/register' style={{textDecoration: 'none'}}><span className="header-sell">Register</span></Link>
+                    <Link to='/sell' style={{textDecoration: 'none'}}><span className="header-sell">Sell</span></Link>
+                    <Link to='/watchlist' style={{textDecoration: 'none'}}><span className="header-sell">Watchlist</span></Link>
 
                 </div>
                 <div className='header-link'>
-                <Link to="/about">About Us</Link>
+                <Link to="/about" style={{textDecoration: 'none', color: 'black'}}>About Us</Link>
                 </div>
             </div>
         <div className='header'>
